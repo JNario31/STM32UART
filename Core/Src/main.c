@@ -102,16 +102,16 @@ int main(void)
 
   /* USER CODE END 2 */
 
-  printMessage:
+printMessage:
 
-    printWelcomeMessage();
+	printWelcomeMessage();
 
-    while (1)  {
-      opt = readUserInput();
-      processUserInput(opt);
-      if(opt == 3)
-        goto printMessage;
-      }
+	while (1)  {
+	  opt = readUserInput();
+	  processUserInput(opt);
+	  if(opt == 3)
+		goto printMessage;
+	  }
 }
 
 /**
